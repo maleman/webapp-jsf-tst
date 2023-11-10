@@ -1,0 +1,14 @@
+bean\BlogReaderBean.class
+bean\LoginBean.class
+entity\BlogReader.class
+utils\AuthorizationFilter.class
+utils\SessionUtils.class
+dao\BlogDao.class
+entity\LocalEntityManagerFactory.class
+bean\BlogBean.class
+entity\Blog.class
+dao\ReaderxDao.class
+dao\LoginDao.class
+entity\Reader.class
+bean\ReaderBean.class
+dao\BlogReaderDao.class
