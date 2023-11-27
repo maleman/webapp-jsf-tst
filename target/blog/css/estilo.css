@@ -5,7 +5,8 @@ html {
 
 body {
 	text-align: center;
-	color: white;
+	background-color: white !important;
+	text-align: left !important;
 	margin: 0;
 	margin-bottom: 40px;
 }

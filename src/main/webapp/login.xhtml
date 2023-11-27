@@ -7,33 +7,34 @@
 <h:head>
 	<title>Login</title>
 </h:head>
-<h:body style="text-align:center; background-color: #4B4847;">
-	<p:growl id="mensajes" showDetail="true" life="2000" />
-	<h:form style="display: flex !important; justify-content: center;">
-		<p:panel header="Login" style="width:300px">
-			<div class="card">
-				<div class="ui-fluid">
-					<div class="field grid">
-						<h:outputLabel for="username" value="User Name:" />
-						<p:inputText id="username" required="true" label="username"
-							value="#{loginBean.userName}" />
-						<h:message for="username"></h:message>
-					</div>
+<h:body style="background-color:#4B4847;">
+	<div style="text-align: center;">
+		<p:growl id="mensajes" showDetail="true" life="2000" />
+		<h:form style="display: flex !important; justify-content: center;">
+			<p:panel header="Login" style="width:300px">
+				<div class="card">
+					<div class="ui-fluid">
+						<div class="field grid">
+							<h:outputLabel for="username" value="User Name:" />
+							<p:inputText id="username" required="true" label="username"
+								value="#{loginBean.userName}" />
+							<h:message for="username"></h:message>
+						</div>
 
-					<div class="field grid">
-						<h:outputLabel for="password" value="Password:" />
-						<p:password id="password" required="true" label="password"
-							value="#{loginBean.password}" />
+						<div class="field grid">
+							<h:outputLabel for="password" value="Password:" />
+							<p:password id="password" required="true" label="password"
+								value="#{loginBean.password}" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<f:facet name="footer">
-				<p:commandButton id="loginButton" value="Login" update=":mensajes"
-					action="#{loginBean.validateUsernamePassword}" />
-			</f:facet>
+				<f:facet name="footer">
+					<p:commandButton id="loginButton" value="Login" update=":mensajes"
+						action="#{loginBean.validateUsernamePassword}" />
+				</f:facet>
 
-		</p:panel>
-	</h:form>
-
+			</p:panel>
+		</h:form>
+	</div>
 </h:body>
 </html>
